@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6e374dfce27344fb342665e6ab631e, type: 3}
+  m_Name: TestState4
+  m_EditorClassIdentifier: 
+  storyText: "2 Day\n\nWe decided before we send out one person into his enevatable
+    death, we would stay put and hunker down for the day allthough we already used
+    some portion of the food we had stacked in our appartement. This gave us enough
+    time to plan our next moves.\n\n1. Look for help further down in the building
+    \n2. Try to get to the roof\n\n"
+  nextStates:
+  - {fileID: 11400000, guid: 1200b44ffd1cfc64bb33cbb181d42000, type: 2}
+  options:
+  - option: further down
+    people: 0
+    defense: 0
+    faith: 0
+    food: -0.1
+  - option: roof
+    people: 0
+    defense: 0
+    faith: 0
+    food: -0.1
