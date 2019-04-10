@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6e374dfce27344fb342665e6ab631e, type: 3}
+  m_Name: 1-1
+  m_EditorClassIdentifier: 
+  storyText: '1 day
+
+
+    Everything seems to be oddly quiet, since the earthquake began...
+
+
+    We should go out and search the other appartements for supplies.
+
+
+    1. Send one out to scavenge
+
+    2. Lets stay put and sit this one out
+
+'
+  nextStates:
+  - {fileID: 11400000, guid: 0f514ba378a863f4ead862a4afd58e1a, type: 2}
+  - {fileID: 11400000, guid: e31d1ce9b69bdb549a32d0facaab9ed5, type: 2}
+  options:
+  - option: werwrwerwer
+    people: 0
+    defense: 0
+    faith: -0.1
+    food: 0
+  - option: wrwerwewer
+    people: 0
+    defense: 0
+    faith: -0.1
+    food: 0

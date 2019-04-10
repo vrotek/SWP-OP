@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class StartState : Zustand {
 
-    public override void GameAction(GameManager gameManager)
+    GameManager gameManager = GameManager.getInstance();
+
+    public override void GameAction()
     {
         
         
         gameManager.setState(new StartState());
     }
 
-    public void ChangeScene()
+    public override void ChangeScene()
     {
         SceneManager.LoadScene(1);
     }

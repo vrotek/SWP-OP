@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6e374dfce27344fb342665e6ab631e, type: 3}
+  m_Name: IntroDay
+  m_EditorClassIdentifier: 
+  storyText: 'Seems like the world has gone to the dogs and you and your fellow neighbours
+    have to bunker down and rebuild this great society from the ground up.
+
+
+    1. YAY, this will be fun!!!!
+
+
+    2. Oh god, I dont even know their name....'
+  nextStates:
+  - {fileID: 11400000, guid: 70eb0b1d4dc306447ba9cbe68ba6cf97, type: 2}
+  options:
+  - option: 1
+    people: 0
+    defense: 0
+    faith: -0.05
+    food: 0
+  - option: 2
+    people: 0
+    defense: 0
+    faith: -0.1
+    food: 0

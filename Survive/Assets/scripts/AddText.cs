@@ -12,20 +12,25 @@ public class AddText : MonoBehaviour {
     [SerializeField] private Slider defense;
     [SerializeField] private Slider faith;
     [SerializeField] private Slider food;
+    [SerializeField] private Text balance;
     private State state;
+    public static int score;
 
 	// Use this for initialization
 	void Start () {
         state = currentState;
         text.text = state.getStateStory();
-	}
+        score = 60;
+        balance.text = score.ToString();
+    }
 
     
 	
 	// Update is called once per frame
 	void Update () {
         ManageState();
-	}
+        balance.text = score.ToString();
+    }
 
     private void ManageState()
     {
@@ -34,9 +39,12 @@ public class AddText : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
+                score += 2;
+                balance.text = score.ToString();
+                Debug.Log(score);
                 state = nextStates[i];
                 ChangeStates(i);
-
+                
             }
             
 
@@ -51,5 +59,6 @@ public class AddText : MonoBehaviour {
         defense.value += state.getOption(index).defense;
         faith.value += state.getOption(index).faith;
         food.value += state.getOption(index).food;
+        
     }
 }

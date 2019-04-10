@@ -9,19 +9,27 @@ public class Intro : MonoBehaviour {
     public void Enter()
     {
 
-        SceneManager.LoadScene(1);
+        GameManager gameManager = GameManager.getInstance();
         gameManager.getState().ChangeScene();
     }
 
     private void Awake()
     {
         StartState startState = new StartState();
-        startState.GameAction(gameManager);
+        startState.GameAction();
         
 
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
     
+        
+    }
 
-   
 
-}
+
+
+
