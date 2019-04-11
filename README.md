@@ -122,7 +122,8 @@ public class Zustand : MonoBehaviour {
 }
 
 ```
-**StartState**
+**StartState**<br>
+Der StartState ist einer der beiden States welche im Spiel verwendet werden, hierbei implementiert die Klasse das Interface Zustand. In ChangeScene() wird die Hauptscene geladen wenn wir das Spiel Starten wollen.
 ```c#
 public class StartState : Zustand {
 
@@ -144,6 +145,7 @@ public class StartState : Zustand {
 }
 ```
 **LoseState**
+Gleich wie beim StartState nur wird im ChangeScene() die Endscene geladen.
 ```c#
 public class LoseState : Zustand {
     GameManager gameManager = GameManager.getInstance();
@@ -163,7 +165,8 @@ public class LoseState : Zustand {
     
 }
 ```
-**Setzen des StartStates**
+**Setzen des StartStates**<br>
+Den Startstate setzen wir wenn der Spieler den Button Start und damit die Methode Enter() ausführt. Wenn das Script ausgeführt wird setzen wir den State in den StartState.
 ```c#
  public void Enter()
     {
@@ -180,7 +183,8 @@ public class LoseState : Zustand {
 
     }
 ```
-**Setzen des LoseStates**
+**Setzen des LoseStates**<br>
+Hier überprüfen wir ob im Spiel einer der 4 Werte auf 0 sinkt wobei hier der LoseState gesetzt wird.
 ```c#
 void Update () {
         if(people.value <= 0)
